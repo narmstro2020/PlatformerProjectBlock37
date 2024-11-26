@@ -31,6 +31,11 @@ public class GameWindow {
 		// TODO: yes because we need to implement the methods right here and right now.
 		// TODO: the upsides is that I don't need a new file
 		// TODO: the downsides are that I can't reuse this exact implementation.
+		// TODO: anonymous class don't have constructors (cause they don't have names), cause they are
+		// anonymous.
+		// TODO: they don't have fields but since they are scoped in a method in a class they have access
+		// to method local variables and class fields.
+		// The variables they can access must be final or effectively final.
 		// but that is okay since we only need one at the moment anyways.
 		var windowFocusListener = new WindowFocusListener(){
 
