@@ -1,5 +1,6 @@
 package utilz;
 
+// TODO: double check this file.  Sometimes I just give you improvements :)
 public class Constants {
     // TODO: Nothing to do on this one, just something to read and learn from.
     // You can organize Constants into categories by using static inner classes.

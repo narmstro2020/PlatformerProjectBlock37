@@ -22,15 +22,7 @@ public class KeyboardInputs implements KeyListener {
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		switch(e.getKeyCode()){
-			// TODO: case KeyEvent.VK_W:
-			// TODO: case KeyEvent.VK_A:
-			// TODO: case KeyEvent.VK_S:
-			// TODO: case KeyEvent.VK_D:
-			// TODO: the above cases fall through to case VK_D where you do the following
-			// TODO: gamePanel.setMoving(false)
-			// TODO: break;
-		}
+		// TODO: identical to keypressed but sets all cases set to false.
 
 	}
 
@@ -40,16 +32,16 @@ public class KeyboardInputs implements KeyListener {
 		// These shouldn't be red as I've already included the import.  above.
 		switch (e.getKeyCode()) {
 		case KeyEvent.VK_W:
-			gamePanel.changeYDelta(UP);
+			gamePanel.getGame().getPlayer().setUp(true);
 			break;
 		case KeyEvent.VK_A:
-			gamePanel.changeXDelta(LEFT);
+			//TODO: similiar to W, but left
 			break;
 		case KeyEvent.VK_S:
-			gamePanel.changeYDelta(DOWN);
+			// TODO: similar to W but down
 			break;
 		case KeyEvent.VK_D:
-			gamePanel.changeXDelta(RIGHT);
+			// TODO: similar to D but right
 			break;
 		}
 
