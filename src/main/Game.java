@@ -1,7 +1,5 @@
 package main;
 
-import entities.Player;
-
 import java.awt.*;
 
 // TODO: double check this file.  Sometimes I just give you improvements :)
