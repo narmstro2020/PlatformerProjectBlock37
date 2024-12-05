@@ -88,6 +88,7 @@ public class Player extends Entity {
         }
         else if (down && !up){
             y += playerSpeed;
+            moving = true;
         }
     }
 
