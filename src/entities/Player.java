@@ -93,20 +93,20 @@ public class Player extends Entity {
 
     private void loadAnimations() {
         InputStream is = getClass().getResourceAsStream("/player_sprites.png");
-        try{
+        try {
             BufferedImage img = ImageIO.read(is);
+
             animations = new BufferedImage[9][6];
-            for(int row = 0; row < animations.length; row++){
-                for(int col = 0; col < animations[row].length; col++){
-                    animations[row][col] = img.getSubimage(row * 64, col * 40, 64, 40);
-                }
-            }
-        }catch (IOException e){
+            for (int row = 0; row < animations.length; row++)
+                for (int col = 0; col < animations[row].length; col++)
+                    animations[row][col] = img.getSubimage(col * 64, row * 40, 64, 40);
+
+        } catch (IOException e) {
             e.printStackTrace();
-        }finally{
-            try{
+        } finally {
+            try {
                 is.close();
-            }catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
