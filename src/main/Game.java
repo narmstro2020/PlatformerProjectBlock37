@@ -1,8 +1,9 @@
 package main;
 
+import entities.Player;
+
 import java.awt.*;
 
-// TODO: double check this file.  Sometimes I just give you improvements :)
 public class Game implements Runnable {
 
     private GameWindow gameWindow;

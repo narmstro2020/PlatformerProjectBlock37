@@ -1,20 +1,12 @@
 package main;
 
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.io.InputStream;
 
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 import inputs.KeyboardInputs;
 import inputs.MouseInputs;
 
-import static utilz.Constants.PlayerConstants.*;
-import static utilz.Constants.Directions.*;
-
-// TODO: double check this file.  Sometimes I just give you improvements :)
 public class GamePanel extends JPanel {
 
     private MouseInputs mouseInputs;

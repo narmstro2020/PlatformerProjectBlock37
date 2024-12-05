@@ -22,20 +22,30 @@ public class KeyboardInputs implements KeyListener {
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO: identical to keypressed but sets all cases set to false.
-
+		switch (e.getKeyCode()) {
+			case KeyEvent.VK_W:
+				gamePanel.getGame().getPlayer().setUp(false);
+				break;
+			case KeyEvent.VK_A:
+				gamePanel.getGame().getPlayer().setLeft(false);
+				break;
+			case KeyEvent.VK_S:
+				// TODO: similar to W but down
+				break;
+			case KeyEvent.VK_D:
+				// TODO: similar to D but right
+				break;
+		}
 	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
-		// TODO: don't do anything here.  UP, LEFT, DOWN, and RIGHT come from Constants.  Once you finish them
-		// These shouldn't be red as I've already included the import.  above.
 		switch (e.getKeyCode()) {
 		case KeyEvent.VK_W:
 			gamePanel.getGame().getPlayer().setUp(true);
 			break;
 		case KeyEvent.VK_A:
-			//TODO: similiar to W, but left
+			gamePanel.getGame().getPlayer().setLeft(true);
 			break;
 		case KeyEvent.VK_S:
 			// TODO: similar to W but down
@@ -44,7 +54,6 @@ public class KeyboardInputs implements KeyListener {
 			// TODO: similar to D but right
 			break;
 		}
-
 	}
 
 }
